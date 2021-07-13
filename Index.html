@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        .container{
+            font-size: 30px;
+            background-color: rgb(129, 95, 160);
+            border: 3px solid blue;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #Count{
+            font-weight: bold;                                                                                                                            : bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 id="Count"> This is the Timer Using Html,CSS and JS = 15 </h1>
+</div>
+<script>
+    var counter = 15;
+
+    setInterval(function(){
+        counter--;
+
+        if( counter >= 0){
+            id = document.getElementById("Count");
+            id.innerHTML = counter;
+        }
+
+        if(counter === 0){
+            id.innerHTML = alert("Your Work is Successfully Submitted");
+            id.innerHTML = "Complete";
+        }
+    }, 1000);
+</script>
+</body>
+</html>
